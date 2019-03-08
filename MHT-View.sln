@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MHT-View", "MHT-View\MHT-View.vbproj", "{BC36E029-2FC1-47DE-8887-667BB7F2D9F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC36E029-2FC1-47DE-8887-667BB7F2D9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC36E029-2FC1-47DE-8887-667BB7F2D9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC36E029-2FC1-47DE-8887-667BB7F2D9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC36E029-2FC1-47DE-8887-667BB7F2D9F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07DCA596-FD46-4F4F-8B24-C8C895DA35DE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿<Window x:Name="MHTView" x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MHT_View"
+        mc:Ignorable="d"
+        Title="MHT-View" Height="660" Width="875" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" AutomationProperties.IsOffscreenBehavior="Onscreen">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Grid>
+        <WebBrowser x:Name="WebDisplay" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <StatusBar HorizontalAlignment="Stretch" Height="32" VerticalAlignment="Bottom" Background="#FF494949" >
+            <StatusBarItem DockPanel.Dock="Right">
+                <Button x:Name="CloseButton" Content="OK" Width="75" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+            </StatusBarItem>
+            <StatusBarItem DockPanel.Dock="Right">
+                <Label></Label>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
