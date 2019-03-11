@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MHT_View"
         mc:Ignorable="d"
-        Title="MHT-View" Height="660" Width="875" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" AutomationProperties.IsOffscreenBehavior="Onscreen">
+        Title="MHT-View" Height="600" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen" AutomationProperties.IsOffscreenBehavior="Onscreen" Topmost="True" MinWidth="64" MinHeight="64" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
     <Grid>
-        <WebBrowser x:Name="WebDisplay" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-        <StatusBar HorizontalAlignment="Stretch" Height="32" VerticalAlignment="Bottom" Background="#FF494949" >
+        <Image x:Name="SplashScreen" Margin="0,0,0,32" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="None"/>
+        <WebBrowser x:Name="WebDisplay" Margin="0,0,0,32" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" />
+        <StatusBar HorizontalAlignment="Stretch" Height="32" VerticalAlignment="Bottom" Background="#FF494949" Panel.ZIndex="1" >
             <StatusBarItem DockPanel.Dock="Right">
-                <Button x:Name="CloseButton" Content="OK" Width="75" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                <Button x:Name="CloseButton" Content="OK" Width="75" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" UseLayoutRounding="True" IsDefault="True" IsCancel="True" />
             </StatusBarItem>
             <StatusBarItem DockPanel.Dock="Right">
                 <Label></Label>
             </StatusBarItem>
-        </StatusBar>
+        </StatusBar>      
     </Grid>
 </Window>

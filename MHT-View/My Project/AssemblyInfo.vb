@@ -11,8 +11,8 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("MHT_View")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyTitle("MHT View")>
+<Assembly: AssemblyDescription("Quickly display a one page MHT file as a message box dialog.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("MHT_View")>
 <Assembly: AssemblyCopyright("Copyright ©  2019")>
