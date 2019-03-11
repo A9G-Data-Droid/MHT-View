@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MHT_View"
         mc:Ignorable="d"
         Title="MHT-View" Height="600" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen" AutomationProperties.IsOffscreenBehavior="Onscreen" Topmost="True" MinWidth="64" MinHeight="64" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
     <Window.Effect>
