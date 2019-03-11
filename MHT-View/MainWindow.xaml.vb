@@ -59,7 +59,7 @@
         ElseIf Not IO.File.Exists(commandLineArgs(1)) AndAlso
             Not uri.IsWellFormedUriString(commandLineArgs(1), UriKind.RelativeOrAbsolute) Then
             errorMessage = "This is not a valid path: " & Environment.NewLine & commandLineArgs(1)
-        ElseIf Not Right(commandLineArgs(1), 4) = ".mht" Then
+        ElseIf Not commandLineArgs(1).Substring(commandLineArgs(1).Length - 4) = ".mht" Then
             errorMessage = "This is not an *.mht file: " & Environment.NewLine & commandLineArgs(1)
         Else
             _mhtPath = commandLineArgs(1)
