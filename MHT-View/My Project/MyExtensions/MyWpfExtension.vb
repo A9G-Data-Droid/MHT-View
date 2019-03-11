@@ -1,13 +1,16 @@
-﻿#If _MyType <> "Empty" Then
+﻿Imports MhtView.My
 
-Namespace My
+Namespace My_Project.MyExtensions
+#If _MyType <> "Empty" Then
+
+
     ''' <summary>
     ''' Module used to define the properties that are available in the My Namespace for WPF
     ''' </summary>
     ''' <remarks></remarks>
     <Global.Microsoft.VisualBasic.HideModuleName()> _
     Module MyWpfExtension
-        Private s_Computer As New ThreadSafeObjectProvider(Of Global.Microsoft.VisualBasic.Devices.Computer)
+        Private s_Computer As New MyProject.ThreadSafeObjectProvider(Of Global.Microsoft.VisualBasic.Devices.Computer)
         Private s_User As New ThreadSafeObjectProvider(Of Global.Microsoft.VisualBasic.ApplicationServices.User)
         Private s_Windows As New ThreadSafeObjectProvider(Of MyWindows)
         Private s_Log As New ThreadSafeObjectProvider(Of Global.Microsoft.VisualBasic.Logging.Log)
@@ -106,16 +109,17 @@ Namespace My
             End Function
         End Class
     End Module
-End Namespace
-Partial Class Application
-    Inherits Global.System.Windows.Application
-    <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
-    <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1822:MarkMembersAsStatic")> _
-    Friend ReadOnly Property Info() As Global.Microsoft.VisualBasic.ApplicationServices.AssemblyInfo
-        <Global.System.Diagnostics.DebuggerHidden()> _
-        Get
-            Return New Global.Microsoft.VisualBasic.ApplicationServices.AssemblyInfo(Global.System.Reflection.Assembly.GetExecutingAssembly())
-        End Get
-    End Property
-End Class
+
+    Partial Class Application
+        Inherits Global.System.Windows.Application
+        <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
+        <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1822:MarkMembersAsStatic")> _
+        Friend ReadOnly Property Info() As Global.Microsoft.VisualBasic.ApplicationServices.AssemblyInfo
+            <Global.System.Diagnostics.DebuggerHidden()> _
+            Get
+                Return New Global.Microsoft.VisualBasic.ApplicationServices.AssemblyInfo(Global.System.Reflection.Assembly.GetExecutingAssembly())
+            End Get
+        End Property
+    End Class
 #End If
+End NameSpace

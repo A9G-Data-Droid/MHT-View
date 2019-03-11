@@ -15,9 +15,10 @@ Imports System.Windows
 <Assembly: AssemblyDescription("Quickly display a one page MHT file as a message box dialog.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("MHT_View")>
-<Assembly: AssemblyCopyright("Copyright ©  2019")>
+<Assembly: AssemblyCopyright("Copyright © 2019 Adam Kauffman")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
+<assembly: CLSCompliant(true)>
 
 'In order to begin building localizable applications, set
 '<UICulture>CultureYouAreCodingWith</UICulture> in your .vbproj file
@@ -57,3 +58,4 @@ Imports System.Windows
 
 <Assembly: AssemblyVersion("1.0.0.0")>
 <Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: NeutralResourcesLanguage("en")>
