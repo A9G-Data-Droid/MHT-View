@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="MHT-View" Height="600" Width="800" WindowStartupLocation="CenterScreen" AutomationProperties.IsOffscreenBehavior="Onscreen" Topmost="True" MinWidth="64" MinHeight="64" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+        Title="MHT-View" Height="600" Width="800" WindowStartupLocation="CenterScreen" AutomationProperties.IsOffscreenBehavior="Onscreen" Topmost="True" MinWidth="128" MinHeight="64" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="35"
+        <WindowChrome CaptionHeight="33"
                       GlassFrameThickness="0,0,0,1"
                       ResizeBorderThickness="5" />
     </WindowChrome.WindowChrome>

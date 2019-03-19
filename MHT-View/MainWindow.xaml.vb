@@ -1,4 +1,5 @@
 ﻿Class MainWindow
+    ' This holds the path/URL passed in via the command line
     Private _mhtPath As String
 
     Public Sub New()
@@ -51,17 +52,22 @@
         Dim commandLineArgs() As String
         commandLineArgs = Environment.GetCommandLineArgs
 
-        Dim errorMessage As String = Nothing
         ' Argument validation
+        Dim errorMessage As String = Nothing
+        '   Must have exactly one argument
         If (commandLineArgs Is Nothing OrElse commandLineArgs.LongLength <> 2) Then
             errorMessage = "Invalid number of command line arguments." & Environment.NewLine _
               & "This application only accepts one, mandatory, argument: an *.mht file to display."
+
+            '   Must be a local file or a valid URL
         ElseIf Not IO.File.Exists(commandLineArgs(1)) AndAlso
-            Not uri.IsWellFormedUriString(commandLineArgs(1), UriKind.RelativeOrAbsolute) Then
+            Not Uri.IsWellFormedUriString(commandLineArgs(1), UriKind.RelativeOrAbsolute) Then
             errorMessage = "This is not a valid path: " & Environment.NewLine & commandLineArgs(1)
+
+            ' Must be an *.MHT file
         ElseIf Not commandLineArgs(1).Substring(commandLineArgs(1).Length - 4) = ".mht" Then
             errorMessage = "This is not an *.mht file: " & Environment.NewLine & commandLineArgs(1)
-        Else
+        Else ' Accept one argument as a path to the MHT file
             _mhtPath = commandLineArgs(1)
         End If
 
